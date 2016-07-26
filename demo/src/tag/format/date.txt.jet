@@ -14,3 +14,4 @@
 <f:date type="date" dateStyle="full" locale="zh"><get value='now'/></f:date>
 <f:date type="time" timeStyle="long" locale="zh"><get value='now'/></f:date>
 
+<t:action/>

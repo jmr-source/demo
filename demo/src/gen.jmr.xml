@@ -7,10 +7,46 @@
                <modelGroupName></modelGroupName>
                <actionClass></actionClass>
                <templatePath>demo/src/tag/format/date.txt.jet</templatePath>
-               <targetContainer>/demo/out/tag/format</targetContainer>
+               <targetContainer>/demo/src/tag/format</targetContainer>
                <targetName>date</targetName>
                <targetExt>txt</targetExt>
-               <targetEncoding>GBK</targetEncoding>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+            <task name="number">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/format/number.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/format</targetContainer>
+               <targetName>number</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+         </directory>
+         <directory name="include">
+            <task name="include">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/include/include.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/include</targetContainer>
+               <targetName>include</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+         </directory>
+      </project>
+      <project name="task">
+         <directory name="eg">
+            <task name="task">
+               <modelGroupName>model</modelGroupName>
+               <actionClass>task.TaskAction</actionClass>
+               <templatePath>demo/src/task/task.txt.jet</templatePath>
+               <targetContainer>/demo/src/task</targetContainer>
+               <targetName>task</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
                <generation mode="overlay"></generation>
             </task>
          </directory>
@@ -19,6 +55,8 @@
    <db>
    </db>
    <model>
+      <group name="model">
+      </group>
    </model>
    <rule>
       <types>
