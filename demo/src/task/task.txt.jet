@@ -1,0 +1,11 @@
+<%@jet package="translated" class="Task_txt"%>
+-----Task Message-----
+
+<t:group/>
+<t:action/>
+<t:template/>
+<t:directory/>
+<t:name/>
+<t:ext/>
+<t:encoding/>
+<t:mode/>
