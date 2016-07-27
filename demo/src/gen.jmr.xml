@@ -23,6 +23,46 @@
                <targetEncoding>UTF-8</targetEncoding>
                <generation mode="overlay"></generation>
             </task>
+            <task name="ws">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/format/ws.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/format</targetContainer>
+               <targetName>ws</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+            <task name="nl">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/format/nl.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/format</targetContainer>
+               <targetName>nl</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+            <task name="tab">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/format/tab.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/format</targetContainer>
+               <targetName>tab</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+            <task name="f">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/format/f.txt.jet</templatePath>
+               <targetContainer>/demo/src/tag/format</targetContainer>
+               <targetName>f</targetName>
+               <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="new"></generation>
+            </task>
          </directory>
          <directory name="include">
             <task name="include">
@@ -32,6 +72,18 @@
                <targetContainer>/demo/src/tag/include</targetContainer>
                <targetName>include</targetName>
                <targetExt>txt</targetExt>
+               <targetEncoding>UTF-8</targetEncoding>
+               <generation mode="overlay"></generation>
+            </task>
+         </directory>
+         <directory name="java">
+            <task name="HelloJmr">
+               <modelGroupName></modelGroupName>
+               <actionClass></actionClass>
+               <templatePath>demo/src/tag/java/HelloJmr.java.jet</templatePath>
+               <targetContainer>/demo/src/tag/java</targetContainer>
+               <targetName>HelloJmr</targetName>
+               <targetExt>java</targetExt>
                <targetEncoding>UTF-8</targetEncoding>
                <generation mode="overlay"></generation>
             </task>
