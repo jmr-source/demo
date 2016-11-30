@@ -1,0 +1,26 @@
+<%@jet package="translated" class="Import_txt" %>
+<%@jet imports="template.Import"%>
+<%@jet imports="java.util.List"%>
+<%@jet imports="java.util.ArrayList"%>
+<%-- 设置packageName为"template.Import"，className为"Import" --%>
+<%! private Import i = new Import("template.Import", "Import"); %>
+<%
+    //得到包名
+    String packageName = i.getPackageName();
+    //得到类名
+    String className = i.getClassName();
+
+    //遍历出包名中的每个元素存放到List中
+    List<String> list = new ArrayList<String>();
+    String[] names = packageName.split("\\.");
+    for(String name : names){
+       list.add(name);
+    }
+%>
+
+包名<%=packageName%>  类名：<%=className%>
+
+包的每个目录: 
+<%for(String name : list){%>
+<%=name%>
+<%}%>

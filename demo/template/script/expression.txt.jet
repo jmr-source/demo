@@ -1,0 +1,29 @@
+<%@jet package="translated" class="Expression_txt"%>
+<%@jet imports="java.text.SimpleDateFormat"%>
+<%@jet imports="java.util.Date"%>
+<%! String depart = "研发部"; %>
+<%! String name = "张三"; %>
+<%! String reason = "回家探亲"; %>
+<%! int day = 2; %>
+<%! Date startDate = new Date();%>
+<%! Date endDate = getNextDate(startDate, day); %>
+<%!
+  /** 得到日期格式 yyyy/MM/dd **/
+  private String getDayString(Date date){
+      return new SimpleDateFormat("yyyy/MM/dd").format(date);
+  }
+  /** 得到指定天数后的日期 **/
+  private Date getNextDate(Date date, int day){
+      return new Date(date.getTime() + day * 24 * 60 * 60 * 1000);  
+  }
+ %>
+ 
+尊敬的领导：
+　　您好!
+　　我是<%=depart%>的<%=name%>，因为<%=reason%>，需要请假；
+从<%=getDayString(startDate)%>到<%=getDayString(endDate)%>，共 <%=day%>天假；
+恳请领导批准。
+
+此致敬礼！
+请假人：<%=name%>
+日期：<%=getDayString(new Date())%>

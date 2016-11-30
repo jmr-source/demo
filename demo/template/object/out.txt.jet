@@ -1,0 +1,44 @@
+<%@jet package="translated" class="Out_txt"%>
+<%@jet imports="java.util.Date"%>
+<%@jet imports="java.util.List"%>
+<%@jet imports="java.util.ArrayList"%>
+<%@jet imports="java.util.Map"%>
+<%@jet imports="java.util.HashMap"%>
+<%--定义int double float类型 --%>
+<%int i = 1;%>
+<%double d = 3.141592;%>
+<%float f = (float)3.14;%>
+<%float c = 'c';%>
+<%--输出String类型 --%>
+<%out.write("Hello Jmr!");%>
+<%--输出boolean和Boolean类型 --%>
+<%out.write(true);%>
+<%out.write(new Boolean(false));%>
+<%--输出char和Character类型 --%>
+<%out.write(c);%>
+<%out.write(new Character('c'));%>
+<%--输出char数组 --%>
+<%out.write(new char[]{'a', 'b', 'c'});%>
+<%--输出int和Integer类型 --%>
+<%out.write(i);%>
+<%out.write(new Integer(1));%>
+<%--输出double和Double类型 --%>
+<%out.write(d);%>
+<%out.write(new Double(3.141592));%>
+<%--输出float和Float类型 --%>
+<%out.write(f);%>
+<%out.write(new Float(3.14));%>
+<%--输出Object类型 --%>
+<%out.write(new Object());%>
+<%out.write(new Date());%>
+
+<set value="{'e1','e2','e3'}" var="xs"/>
+<% 
+   List<String> list = new ArrayList<String>();
+   list.add("a");
+   list.add("b");
+   context.setVariable("list", list);
+   
+   Map map = new HashMap();
+   context.setVariable("map", map); 
+ %>
